@@ -16,7 +16,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        {children}
+        <div className="footer__container">
+          <h1 className="footer__title">Due credits for artwork used on this page</h1>
+          <h2 className="footer__subtitle">Animation made by </h2>
+          <a className="footer__link" target="_blank" href="https://lottiefiles.com/matheus.mesk?page=2">Matheus Mesquita</a>
+          <h2 className="footer__subtitle">From</h2>
+          <a className="footer__link" target="_blank" href="https://lottiefiles.com/">LottieFiles</a>
+        </div>
+      </body>
     </html>
   );
 }

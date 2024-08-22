@@ -16,19 +16,29 @@
   }
 }
 
-body {
-  // color: rgb(var(--foreground-rgb));
-  // background: linear-gradient(
-  //     to bottom,
-  //     transparent,
-  //     rgb(var(--background-end-rgb))
-  //   )
-  //   rgb(var(--background-start-rgb));
-  // @apply bg-dragon bg-cover bg-no-repeat bg-center h-screen bg-opacity-70 backdrop-opacity-10;
+h1 {
+  @apply text-4xl font-bold;
 }
+
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.footer {
+  &__container {
+    @apply bg-slate-700 h-56 w-full min-w-full flex flex-col items-center justify-center
+  }
+  &__title {
+    @apply text-lg font-bold text-white;
+  }
+  &__subtitle {
+    @apply text-base font-semibold text-gray-400;
+  }
+  &__link {
+    @apply underline text-base font-semibold text-blue-600;
+  }
+
 }
