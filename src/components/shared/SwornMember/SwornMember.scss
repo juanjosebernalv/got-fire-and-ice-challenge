@@ -1,0 +1,10 @@
+.member {
+  &__container {
+    &--live {
+      @apply bg-green-200 border-green-500 border-8 rounded-2xl overflow-hidden shadow-black shadow-sm p-6 my-4;
+    }
+    &--dead {
+      @apply bg-gray-900 border-gray-500 border-8 rounded-2xl overflow-hidden shadow-black shadow-sm text-white p-6 my-4;
+    }
+  }
+}
