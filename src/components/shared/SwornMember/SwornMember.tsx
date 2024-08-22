@@ -1,5 +1,4 @@
 import { getMemberDetail } from 'app/services/iceandfire';
-import React from 'react';
 import './SwornMember.scss';
 
 export const SwornMember = async ({member}: {member:string}) => {

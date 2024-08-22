@@ -1,5 +1,4 @@
 import { IHouse } from 'app/app/server/house/interfaces';
-import React from 'react';
 import './HouseCard.scss';
 import { SwornMember } from '../SwornMember';
 

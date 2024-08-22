@@ -36,3 +36,23 @@ export interface ISwornMember {
   playedBy:    string[];
 }
 
+export interface IPaginationLinks {
+  prev?: string;
+  next?: string;
+  first: string;
+  last: string;
+}
+
+export interface IHousePageResponse {
+  houses: IHouse[];
+  props: IPaginationLinks;
+}
+
+export interface IHordeProps {
+  params: {
+    horde: string;
+  },
+  searchParams: {
+    search?: string;
+  }
+}

@@ -1,12 +1,10 @@
 // "use client"
 import { IHouse } from 'app/app/server/house/interfaces';
 import { HouseCard } from '../../shared/HouseCard';
-import './Houses.scss';
-import { getHouses } from 'app/services/iceandfire';
+import './DynamicHouses.scss';
 
 
-export const Houses = async () => {
-  const houses = await getHouses();
+export const DynamicHouses = ({houses}:{houses:IHouse[]}) => {
 
   return (
     <div className="houses__list-container">
